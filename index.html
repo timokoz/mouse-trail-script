@@ -77,7 +77,7 @@
 
             ctx.beginPath();
             if (p.variation == 0 || p.variation == 1 || p.variation == 2 || p.variation == 3) {
-                // Create X
+                // create "x"
                 ctx.moveTo(p.x - p.size / 2, p.y - p.size / 2);
                 ctx.lineTo(p.x + p.size / 2, p.y + p.size / 2);
 
@@ -86,7 +86,7 @@
             }
 
             if (p.variation == 0 || p.variation == 1 || p.variation == 4 || p.variation == 5) {
-                // Create +
+                // create plus
                 ctx.moveTo(p.x + p.size / 2, p.y);
                 ctx.lineTo(p.x - p.size / 2, p.y);
 
@@ -94,11 +94,11 @@
                 ctx.lineTo(p.x, p.y - p.size / 2);
             }
 
-            if (p.variation == 6) { // Create circle
+            if (p.variation == 6) { // create circle
                 ctx.arc(p.x, p.y, p.size / 2, 0, 2 * Math.PI, false);
             }
 
-            if (p.variation == 7) { // Create filled circle
+            if (p.variation == 7) { 
                 ctx.arc(p.x, p.y, p.size / 2, 0, 2 * Math.PI, false);
                 ctx.fillStyle = color;
                 ctx.fill();
